@@ -16,9 +16,63 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <div class="logo">
+                <img src="./images/logo/Booki@3x.png" alt="Logo de Booki" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activite">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <div class="hebergements-and-populaires">
+            <section class="info-group">
+                <div class="headline">
+                    <h1 class="title-site">Trouvez votre hébergement pour des vacances de rêves</h1>
+                    <p class="subtitle-site">En plein centre-ville ou en pleine nature</p>
+                </div>
+                <form id="form-search" action="#" method="post">
+                    <label for="search" id="search-icon"><i class="fa-solid fa-location-dot"></i></label>
+                    <input type="search" name="search" id="search" value="Marseille, France">
+                    <button type="button" id="search-btn">Rechercher</button>
+                </form>
+                <div class="filter">
+                    <div class="filter-title">
+                        <h2 class="section-title">Filtres</h2>
+                    </div>
+                    <div class="filter-list">
+                        <button class="filter-bubble">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </button>
+    
+                        <button class="filter-bubble">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </button>
+    
+                        <button class="filter-bubble">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </button>
+    
+                        <button class="filter-bubble">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Nos pépites</span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="infobar">
+                    <div class="infobar-icon">
+                        <i class="fa-solid fa-info"></i>
+                    </div>
+                    <p>Plus de 500 hébergements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+            <div class="hebergements-and-populaires" id="hebergement">
                 <section class="hebergements">
 
                 </section>
@@ -85,6 +139,10 @@
                                 </div>
                             </article>
                         </a>
+                    </div>
+
+                    <div class="activites" id="activite">
+
                     </div>
                 </section>
             </div>
